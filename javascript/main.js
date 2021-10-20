@@ -132,7 +132,7 @@ function showWeatherData(data) {
   data.hourly.forEach((hour, indx) => {
     if (indx == 0) {
       currentTempE1.innerHTML = `
-<img src="http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png"
+<img src="https://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png"
   alt="weather icon" class="w-icon">
   <div class="other">
     <div class="day">${window.moment(data.current.dt * 1000).format("dddd")}</div>
@@ -145,7 +145,7 @@ function showWeatherData(data) {
       otherDayForcast += `
                <div class="weather-forcast-item">
                         <div class="day">${converttTime(hour.dt)}</div>
-                        <img src="http://openweathermap.org/img/wn/${
+                        <img src="https://openweathermap.org/img/wn/${
                           hour.weather[0].icon
                         }@2x.png"
                             alt="weather icon" class="w-icon">
@@ -198,7 +198,7 @@ function displayDataByCity(weatherdata) {
   weatherdata.list.forEach((day, indx) => {
     if (indx == 0) {
       currentTempE1.innerHTML = `
-<img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png"
+<img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png"
   alt="weather icon" class="w-icon">
   <div class="other">
     <div class="day">${window.moment(day.dt * 1000).format("ddd")}</div>
@@ -212,7 +212,7 @@ function displayDataByCity(weatherdata) {
       otherDayForcast += `
                <div class="weather-forcast-item">
                         <div class="day">${converttTime(day.dt)}</div>
-                        <img src="http://openweathermap.org/img/wn/${
+                        <img src="https://openweathermap.org/img/wn/${
                           day.weather[0].icon
                         }@2x.png"
                             alt="weather icon" class="w-icon">
