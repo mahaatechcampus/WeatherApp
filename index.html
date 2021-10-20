@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Weather</title>
+    </head>
+    <body>
+
+        <header>
+            <!-- Search input -->
+            <input type="text" autocomplete="off" class="search-box"
+                placeholder="Search for a City" />
+        </header>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">C&#176 / F&#176</button>
+            <div class="dropdown-content" style="right:0;">
+                <a onclick="getWeatherDate()" href="#">C&#176</a>
+                <a onclick="convertC_to_F()" href="#">F&#176</a>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="current-info">
+
+                <div class="date-container">
+                    <!-- Time -->
+                    <div class="time" id="time">
+                        <span id="am-pm"></span></div>
+                    <!-- Date -->
+                    <div class="date" id="date">
+                        Sunday,17 Oct </div>
+
+                    <!--Humidity, pressure , wind speed  -->
+                    <div class="other" id="current-weather-items">
+
+                    </div>
+                </div>
+
+                <!--city-country -->
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">Riyadh</div>
+                    <div id="country" class="country">SA</div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- temp. for 5 days  -->
+        <div class="future-forecast">
+            <!-- temp for today "day1" -->
+            <div class="today" id="current-temp">
+                <!-- <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt="weather icon" class="w-icon">
+                         <div class="other">
+                        <div class="day">Sunday</div>
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+            </div>
+            <!-- temp for today "day2" -->
+            <div class="weather-forcast" id="weather-forcast">
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+                <!-- temp for today "day3" -->
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+                <!-- temp for today "day4" -->
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+                <!-- temp for today "day5" -->
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                        alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+                <!-- temp for today "day6" -->
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+                <!-- temp for today "day7" -->
+
+                <!-- <div class="weather-forcast-item">
+                        <div class="day">Sunday</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather icon" class="w-icon">
+                        <div class="temp">Day: 25.6&#176;C</div>
+                        <div class="temp">Night: 25.6&#176;C</div>
+                    </div> -->
+            </div>
+
+        </div>
+
+
+        <script src="/JS/main.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    </body>
+</html>
