@@ -78,7 +78,7 @@ header input:focus {
 }
 
 body {
-  background: url(images/noaa-jU-JOEZ2saQ-unsplash.jpg);
+  background: url(../images/noaa-jU-JOEZ2saQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
